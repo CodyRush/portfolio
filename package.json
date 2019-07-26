@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodyRush/portfolio.git"
+  },
+  "author": "Cody Rush",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodyRush/portfolio/issues"
+  },
+  "homepage": "https://github.com/CodyRush/portfolio#readme",
+  "dependencies": {
+    "minireset.css": "0.0.5"
+  }
+}
