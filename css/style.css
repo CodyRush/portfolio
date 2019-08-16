@@ -26,7 +26,7 @@ nav {
 
 /* Header */
 .parallax {
-    background-image: url("../img/laptop-background.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("../img/laptop-background.jpg");
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
