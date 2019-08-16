@@ -1,0 +1,64 @@
+/* COLORS
+MAIN : #298DDCD1;
+SECONDARY : #696B6D;
+*/
+/* Universal Classes */
+.hidden {
+    display: none;
+}
+
+/* Menu */
+nav {
+    background: #298DDC;
+    font-size: 1.3rem;
+    background-attachment: fixed;
+    position: fixed;
+    width: 100%;
+}
+
+.icon-view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    
+}
+
+/* Header */
+.parallax {
+    background-image: url("../img/laptop-background.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-image {
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.head-image h1 {
+    font-size: 3rem;
+    padding: 1.2rem 1.2rem 0;
+}
+
+.head-image p {
+    font-size: 1.1rem;
+    padding: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.head-image a {
+    color: white;
+    text-decoration: none;
+    background: #696B6D;
+    padding: 0.7rem 1.2rem;
+    border-radius: 50px;
+    margin: 1.4rem;
+}
