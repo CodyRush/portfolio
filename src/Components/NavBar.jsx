@@ -16,7 +16,7 @@ const Logo = styled.li`
 `;
 
 const Menu = styled.li`
-  width: 3.25rem;
+  width: 3rem;
   cursor: pointer;
 `;
 
@@ -31,7 +31,6 @@ const NavBar = () => {
             focusable='false'
             data-prefix='fas'
             data-icon='bars'
-            class='svg-inline--fa fa-bars fa-w-14'
             role='img'
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 448 512'

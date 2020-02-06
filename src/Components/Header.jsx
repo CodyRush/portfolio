@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Container = styled.header`
   background: #393e46;
   color: #f2f2f2;
-  padding: 15.5rem 1.56rem 7.37rem;
+  padding: 15.5rem 1.5rem 7.37rem;
 `;
 
 const Heading = styled.h1`
@@ -13,13 +13,13 @@ const Heading = styled.h1`
 `;
 
 const ButtonContainer = styled.div`
-  padding: 8rem 0 7.3rem;
+  padding: 8rem 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 `;
 
-const SMButton = styled.button`
+const SMButton = styled.a`
   background: #222831;
   border: none;
   cursor: pointer;
@@ -32,16 +32,15 @@ const Header = () => {
   return (
     <Container>
       <Heading>Cody Rush</Heading>
-      <Heading>Front-End</Heading>
-      <Heading>Designer &amp; Developer</Heading>
+      <Heading>Front End</Heading>
+      <Heading>Web Developer</Heading>
       <ButtonContainer>
-        <SMButton>
+        <SMButton href='https://twitter.com/CodyRush21' target='blank'>
           <svg
             aria-hidden='true'
             focusable='false'
             data-prefix='fab'
             data-icon='twitter'
-            class='svg-inline--fa fa-twitter fa-w-16'
             role='img'
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 512 512'
@@ -52,13 +51,12 @@ const Header = () => {
             ></path>
           </svg>
         </SMButton>
-        <SMButton>
+        <SMButton href='https://github.com/CodyRush' target='blank'>
           <svg
             aria-hidden='true'
             focusable='false'
             data-prefix='fab'
             data-icon='github'
-            class='svg-inline--fa fa-github fa-w-16'
             role='img'
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 496 512'
@@ -69,13 +67,15 @@ const Header = () => {
             ></path>
           </svg>
         </SMButton>
-        <SMButton>
+        <SMButton
+          href='https://ca.linkedin.com/in/cody-rush-762189120'
+          target='blank'
+        >
           <svg
             aria-hidden='true'
             focusable='false'
             data-prefix='fab'
             data-icon='linkedin-in'
-            class='svg-inline--fa fa-linkedin-in fa-w-14'
             role='img'
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 448 512'
