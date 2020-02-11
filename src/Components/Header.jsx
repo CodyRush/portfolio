@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Container = styled.header`
   background: #393e46;
   color: #f2f2f2;
-  padding: 15.5rem 1.5rem 7.37rem;
+  padding: 13rem 1.5rem 7.37rem;
 `;
 
 const Heading = styled.h1`

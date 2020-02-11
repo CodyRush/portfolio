@@ -20,6 +20,7 @@ const ContactForm = styled.form`
 
 const Input = styled.input`
   width: 100%;
+  background: #f2f2f2;
   padding: 1rem;
   font-size: 1.3rem;
   margin-bottom: 2rem;
@@ -29,6 +30,7 @@ const Message = styled.textarea`
   width: 100%;
   height: 240px;
   resize: none;
+  background: #f2f2f2;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.3rem;
   padding: 1rem;
@@ -36,6 +38,7 @@ const Message = styled.textarea`
 
 const Submit = styled.button`
   border: none;
+  background: #f2f2f2;
   margin-top: 2rem;
   padding: 1rem 4rem;
   width: 100%;

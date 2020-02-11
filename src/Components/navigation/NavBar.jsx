@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import MobileMenu from './MobileMenu';
+
 import styled from 'styled-components';
 
 const NavContainer = styled.ul`
@@ -21,12 +23,27 @@ const Menu = styled.li`
 `;
 
 const NavBar = () => {
+  const [isVisable, setIsVisable] = useState(false);
+
+  function handleClick() {
+    console.log(isVisable);
+
+    if (!isVisable) {
+      console.log('not Visable');
+      setIsVisable(true);
+    } else {
+      console.log('Visable');
+      setIsVisable(false);
+    }
+  }
+
   return (
     <nav>
       <NavContainer>
         <Logo>Logo</Logo>
         <Menu>
           <svg
+            onClick={handleClick}
             aria-hidden='true'
             focusable='false'
             data-prefix='fas'
@@ -42,6 +59,7 @@ const NavBar = () => {
           </svg>
         </Menu>
       </NavContainer>
+      {isVisable ? <MobileMenu /> : ''}
     </nav>
   );
 };

@@ -1,9 +1,10 @@
 import React from 'react';
-import NavBar from './Components/NavBar';
+import NavBar from './Components/navigation/NavBar';
 import Header from './Components/Header';
 import PortfolioMain from './Components/portfolio/PortfolioMain';
 import About from './Components/About';
 import Contact from './Components/Contact';
+import Footer from './Components/Footer';
 
 import styled from 'styled-components';
 import 'minireset.css';
@@ -21,6 +22,7 @@ function App() {
       <PortfolioMain />
       <About />
       <Contact />
+      <Footer />
     </AppContainer>
   );
 }

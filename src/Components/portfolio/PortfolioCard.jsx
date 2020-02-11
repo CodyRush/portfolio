@@ -34,7 +34,7 @@ const CTAButton = styled.a`
   color: #f2f2f2;
   font-size: 1rem;
   text-decoration: none;
-  padding: 0.5rem 0.9rem;
+  padding: 0.7rem 1.1rem;
   border: none;
   border-radius: 25px;
   margin: 2rem 0;
