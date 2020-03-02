@@ -5,6 +5,8 @@ import placeholder from '../../Images/placeholder-img.jpg';
 const Card = styled.div`
   background: #f2f2f2;
   padding: 1rem 1.5rem;
+  max-width: 400px;
+  margin: 0 auto;
 `;
 
 const Screenshot = styled.img`

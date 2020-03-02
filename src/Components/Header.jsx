@@ -29,11 +29,14 @@ const HeadingBold = styled(Heading)`
 `;
 
 const HeadingContainer = styled.div`
-  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+
+  @media (min-width: 768px) {
+    height: 400px;
+  }
 `;
 
 const ButtonContainer = styled.div`

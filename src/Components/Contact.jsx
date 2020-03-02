@@ -16,6 +16,8 @@ const Heading = styled.h2`
 const ContactForm = styled.form`
   padding: 2rem 1.3rem;
   background: #222831;
+  max-width: 600px;
+  margin: 0 auto;
 `;
 
 const Input = styled.input`
