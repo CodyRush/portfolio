@@ -4,12 +4,36 @@ import styled from 'styled-components';
 const Container = styled.header`
   background: #393e46;
   color: #f2f2f2;
-  padding: 13rem 1.5rem 7.37rem;
+  padding: 13rem 1.5rem;
+  height: 700px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 `;
 
 const Heading = styled.h1`
-  font-size: 2rem;
-  padding-bottom: 0.75rem;
+  font-size: 40px;
+  margin-bottom: 0.7rem;
+
+  @media (min-width: 768px) {
+    font-size: 56px;
+    margin-bottom: 1rem;
+  }
+`;
+
+const HeadingBold = styled(Heading)`
+  font-weight: 700;
+`;
+
+const HeadingContainer = styled.div`
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 `;
 
 const ButtonContainer = styled.div`
@@ -17,6 +41,12 @@ const ButtonContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: 768px) {
+    flex-direction: column;
+    padding: 0;
+    height: 300px;
+  }
 `;
 
 const SMButton = styled.a`
@@ -31,9 +61,11 @@ const SMButton = styled.a`
 const Header = () => {
   return (
     <Container>
-      <Heading>Cody Rush</Heading>
-      <Heading>Front End</Heading>
-      <Heading>Web Developer</Heading>
+      <HeadingContainer>
+        <Heading>Cody Rush</Heading>
+        <HeadingBold>Front End</HeadingBold>
+        <HeadingBold>Web Developer</HeadingBold>
+      </HeadingContainer>
       <ButtonContainer>
         <SMButton href='https://twitter.com/CodyRush21' target='blank'>
           <svg

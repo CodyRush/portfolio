@@ -11,7 +11,6 @@ const Heading = styled.h2`
   font-size: 1.7rem;
   font-weight: 700;
   color: #f2f2f2;
-  margin-top: -1rem;
   margin-bottom: 3.5rem;
 `;
 

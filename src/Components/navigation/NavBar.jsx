@@ -22,7 +22,7 @@ const MenuButton = styled.li`
   width: 2.6rem;
   cursor: pointer;
 
-  @media (min-width: 768px) {
+  @media (min-width: 767px) {
     display: none;
   }
 `;
@@ -30,7 +30,7 @@ const MenuButton = styled.li`
 const DesktopMenu = styled.ul`
   display: none;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: space-between;
