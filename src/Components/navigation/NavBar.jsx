@@ -9,6 +9,7 @@ const NavContainer = styled.ul`
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem;
+  height: 6rem;
 `;
 
 const Logo = styled.li`
@@ -17,9 +18,34 @@ const Logo = styled.li`
   cursor: pointer;
 `;
 
-const Menu = styled.li`
-  width: 3rem;
+const MenuButton = styled.li`
+  width: 2.6rem;
   cursor: pointer;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+
+const DesktopMenu = styled.ul`
+  display: none;
+
+  @media (min-width: 769px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+  }
+`;
+
+const DesktopMenuItem = styled.li`
+  color: white;
+  font-size: 1.4rem;
+
+  &:hover {
+    cursor: pointer;
+    color: #f96d00;
+  }
 `;
 
 const NavBar = () => {
@@ -29,10 +55,8 @@ const NavBar = () => {
     console.log(isVisable);
 
     if (!isVisable) {
-      console.log('not Visable');
       setIsVisable(true);
     } else {
-      console.log('Visable');
       setIsVisable(false);
     }
   }
@@ -41,7 +65,7 @@ const NavBar = () => {
     <nav>
       <NavContainer>
         <Logo>Logo</Logo>
-        <Menu>
+        <MenuButton>
           <svg
             onClick={handleClick}
             aria-hidden='true'
@@ -57,7 +81,12 @@ const NavBar = () => {
               d='M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z'
             ></path>
           </svg>
-        </Menu>
+        </MenuButton>
+        <DesktopMenu>
+          <DesktopMenuItem>Portfolio</DesktopMenuItem>
+          <DesktopMenuItem>Skills</DesktopMenuItem>
+          <DesktopMenuItem>Contact</DesktopMenuItem>
+        </DesktopMenu>
       </NavContainer>
       {isVisable ? <MobileMenu /> : ''}
     </nav>
